@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pythonproject8"
+version = "0.1.0"
+description = ""
+authors = ["yanochkina_sl <yanochkinasvetlana@mail.ru>"]
+readme = "README.md"
+packages = [
+        {include = "pythonProject8"}
+]
+
+[tool.poetry.scripts]
+get-sorted = "pythonProject8.main:get_sorted"
+get-banch = "pythonProject8.main:get_banch"
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
